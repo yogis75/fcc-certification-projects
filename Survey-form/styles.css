@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+  padding: 5px 0px;
+  height: 25px;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("https://images.pexels.com/photos/1755683/pexels-photo-1755683.jpeg");
+  background-size: cover;
+
+  color: azure;
+}
+
+main {
+  width: 95%;
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: rgba(26, 99, 148, 0.781);
+  padding: 40px;
+}
+
+label,
+form p {
+  margin-block: 5px;
+  display: block;
+}
+
+h1,
+.description {
+  text-align: center;
+  padding: 4rem 0 1rem 0;
+}
+
+.description {
+  padding: 0 0 1rem 0;
+}
+
+.first {
+  display: flex;
+  flex-direction: column;
+}
+
+.first > label > input {
+  display: block;
+}
+
+input[type="radio"],
+input[type="checkbox"],
+.second label,
+.third label {
+  display: inline-block;
+  height: auto;
+  width: unset;
+  margin-right: 5px;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding-block: 5px;
+  background-color: rgba(17, 62, 92, 0.781);
+  outline: none;
+  color: white;
+  border: 1px solid rgba(26, 99, 148, 0.781);
+  margin-block: 5px;
+  height: 25px;
+}
+
+textarea {
+  height: unset;
+}
+
+select {
+  height: 40px;
+  width: 100%;
+}
+
+.second,
+.third,
+.fourth {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.second--radio,
+.third--checkbox {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  margin: 25px auto;
+  display: block;
+  width: 25%;
+  height: 30px;
+  border: none;
+  background: rgba(17, 62, 92, 0.781);
+  color: white;
+}

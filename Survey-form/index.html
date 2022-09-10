@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Survery From</title>
+  </head>
+  <body>
+    <div>
+      <h1 id="title">Survey Form</h1>
+      <p id="description" class="description">
+        Thank you for taking the time to help us improve the platform
+      </p>
+      <main>
+        <form id="survey-form">
+          <div class="first">
+            <label id=" \name-label" for="name"
+              >Name<input
+                id="name"
+                class=""
+                type="text"
+                required
+                placeholder="Enter your name"
+            /></label>
+            <label id="email-label" for="email"
+              >Email<input
+                id="email"
+                class=""
+                type="email"
+                required
+                placeholder="Enter your email" /></label
+            ><label id="number-label" for="number"
+              >Age<input
+                id="number"
+                class=""
+                type="number"
+                required
+                min="13"
+                max="120"
+                placeholder="Enter your age"
+            /></label>
+            <label for="dropdown"
+              >Which option best describes your current role?<select
+                id="dropdown"
+              >
+                <option value="" disabled>Select current role</option>
+                <option value="">Student</option>
+                <option value="">Full-time Job</option>
+                <option value="">Part-time Job</option>
+                <option value="">Intern</option>
+              </select></label
+            >
+          </div>
+          <div class="second">
+            <p class="recommend">
+              Would you recommend this website to your friends?
+            </p>
+            <div class="second--radio">
+              <label for="yes">
+                <input type="radio" name="friend" id="" value="yes" /> Yes
+              </label>
+              <label for="no">
+                <input type="radio" name="friend" id="" value="no" /> No
+              </label>
+            </div>
+          </div>
+          <div class="third">
+            <p>What would you like to see improved? (Check all that apply)</p>
+            <div class="third--checkbox">
+              <label for="front"
+                ><input type="checkbox" name="" id="" value="front" /> Front-end
+                Projects</label
+              ><label for="back"
+                ><input type="checkbox" name="" id="" value="back" /> Back-end
+                Projects</label
+              >
+              <label for="back"
+                ><input type="checkbox" name="" id="" value="back" /> Full stack
+                Projects</label
+              >
+            </div>
+          </div>
+          <div class="fourth">
+            <p>Any Suggestions?</p>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+          </div>
+          <button id="submit" type="submit">Submit</button>
+        </form>
+      </main>
+    </div>
+  </body>
+</html>
