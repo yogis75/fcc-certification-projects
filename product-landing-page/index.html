@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Super Bike</title>
+  </head>
+  <body>
+    <header id="header" class="header flex flex-between">
+      <div class="flex flex-left">
+        <img
+          id="header-img"
+          class="header-img"
+          src="./logo.png"
+          alt="header image"
+        />
+        <h2>Super Bike</h2>
+      </div>
+      <nav id="nav-bar" class="navbar">
+        <ul class="nav-links flex">
+          <li><a class="nav-link" href="#">Home</a></li>
+          <li><a class="nav-link" href="#video">Video</a></li>
+          <li><a class="nav-link" href="#products">Products</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="home" class="container first-container">
+        <h2 class="main-heading">Specially for Crazy Bikers</h2>
+        <form
+          class="form"
+          id="form"
+          action="https://www.freecodecamp.com/email-submit"
+        >
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your email address"
+          />
+          <input id="submit" type="submit" value="Get Started" />
+        </form>
+        <div class="flex first-section">
+          <i class="fa-solid fa-map-location-dot"></i>
+          <h2>GPS Tracking</h2>
+        </div>
+        <div class="flex first-section">
+          <i class="fa-solid fa-car-battery"></i>
+          <h2>Super Charging battery</h2>
+        </div>
+        <div class="flex first-section">
+          <i class="fa-solid fa-weight-scale"></i>
+          <h2>Monitoring Speed and Trip</h2>
+        </div>
+      </section>
+      <section id="video" class="video container">
+        <h1 class="main-heading">Video</h1>
+        <p>Demonstration video</p>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/fGvaF-S4Ya4"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </section>
+      <section id="products" class="products container flex">
+        <div class="tile">
+          <div class="product-heading">
+            <h3>Fitness Bike</h3>
+          </div>
+          <h2 class="price">$700</h2>
+          <p>Lorem ipsum dolor sit amet</p>
+          <p>consectetur adipisicing elit.</p>
+          <p>Expedita similique cumque</p>
+          <button>Buy</button>
+        </div>
+        <div class="tile">
+          <div class="product-heading">
+            <h3>Youth Bike</h3>
+          </div>
+          <h2 class="price">$850</h2>
+          <p>Lorem ipsum dolor sit amet</p>
+          <p>consectetur adipisicing elit.</p>
+          <p>Expedita similique cumque</p>
+          <button>Buy</button>
+        </div>
+        <div class="tile">
+          <div class="product-heading">
+            <h3>Trekking Bike</h3>
+          </div>
+          <h2 class="price">$900</h2>
+          <p>Lorem ipsum dolor sit amet</p>
+          <p>consectetur adipisicing elit.</p>
+          <p>Expedita similique cumque</p>
+          <button>Buy</button>
+        </div>
+      </section>
+      <footer id="footer" class="footer flex flex-between">
+        <p>copyright &copy; 2022, Superbike.com</p>
+        <ul class="nav-links footer-links flex">
+          <li><a class="nav-link" href="#">Home</a></li>
+          <li><a class="nav-link" href="#video">Video</a></li>
+          <li><a class="nav-link" href="#products">Products</a></li>
+        </ul>
+      </footer>
+    </main>
+  </body>
+</html>

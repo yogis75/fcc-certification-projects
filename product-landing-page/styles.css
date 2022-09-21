@@ -1,0 +1,196 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Ubuntu", sans-serif;
+}
+
+.header {
+  height: 70px;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
+  background-color: white;
+}
+
+.container {
+  height: calc(100vh - 7rem);
+}
+
+.video {
+  padding-top: 4rem;
+}
+
+.video p {
+  margin-top: -1rem;
+  margin-bottom: 2rem;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.flext-column {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-between {
+  justify-content: space-between;
+}
+
+.header-img {
+  height: 60px;
+}
+
+.nav-links {
+  list-style: none;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: unset;
+  padding: 1rem;
+}
+
+main {
+  padding-top: 70px;
+  width: 100%;
+  text-align: center;
+}
+
+form,
+iframe {
+  margin: 0 auto;
+}
+
+.main-heading {
+  padding: 3rem 0 1rem 0;
+  font-size: 3rem;
+}
+
+.first-section {
+  width: 50vw;
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: left;
+  font-size: 2rem;
+  padding-block: 2rem;
+  padding-left: 2rem;
+}
+
+.first-section i {
+  margin-right: 100px;
+  color: orangered;
+  font-size: 50px;
+}
+
+.video {
+  margin-top: 5rem;
+}
+
+input {
+  display: block;
+  margin: 1rem auto;
+}
+
+input[type="email"] {
+  padding: 0.2rem;
+  width: 250px;
+  outline: none;
+  border: 1px solid #757575;
+}
+
+input[type="Submit"],
+button {
+  outline: none;
+  padding: 0.3rem 1rem;
+  background: #4478cc;
+  border: none;
+  color: #fff;
+}
+
+.products {
+  justify-content: center;
+  height: 100vh;
+  padding-top: 50px;
+}
+
+.products .tile {
+  height: 300px;
+  border: 1px solid #757575;
+  width: 250px;
+  margin: 2rem;
+}
+
+.tile p {
+  padding-block: 0.7rem;
+}
+
+.tile .product-heading h3 {
+  padding-block: 1rem;
+  background-color: #757575;
+}
+
+.tile h2 {
+  padding-block: 1rem;
+}
+
+.tile button {
+  width: 50%;
+  padding-block: 0.2rem;
+  margin: 1rem;
+}
+
+.footer {
+  padding: 2rem;
+  height: 60px;
+  box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 900px) {
+  header {
+    display: block;
+  }
+
+  .container {
+    height: 100%;
+  }
+
+  html {
+    font-size: 14px;
+  }
+  .main-heading {
+    padding: 3rem 0 1rem 0;
+    font-size: 2rem;
+  }
+
+  .first-section {
+    width: 90%;
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: left;
+    font-size: 2rem;
+    padding-block: 2rem;
+  }
+
+  .first-section i {
+    color: orangered;
+    font-size: 2rem;
+    margin-right: 2rem;
+  }
+
+  .video {
+    overflow-x: scroll;
+  }
+
+  .products {
+    flex-direction: column;
+  }
+}
